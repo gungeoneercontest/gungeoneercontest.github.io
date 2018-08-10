@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel=stylesheet type=text/css href=/fonts.css>
+    <link rel=stylesheet type=text/css href=/style.css>
+
+    <title> 2ND GUNGEON ANNIVERSARY CONTEST </title>
+  </head>
+
+  <body>
+    <span id=pulse></span>
+    <div id=content>
+      <div class="bgbox margins">
+        <h1> Enter the Gungeon Anniversary Gungeoneer Contest </h1>
+        <h3> COMMUNITY VOTE </h3>
+      </div>
+      <div class="small separator"></div>
+      <div class="small separator"></div>
+      <div class="bgbox error margins">
+        <h2> An unknown error has occured. </h2>
+        <p>
+          An unknown, unhandled error has occured.
+        </p>
+        <p id=msg></p>
+        <a class=button href="/browse"> RETURN TO ENTRIES </a>
+      </div>
+    </div>
+
+    <script>
+      function getParameterByName(name) {
+        var match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+        console.log(match[1].replace(/\+/g, ' '));
+        return match && decodeURIComponent(match[1].replace(/\+/g, ' ')).replace("&", "&amp;").replace("\"", "&quot;").replace("<", "&lt;").replace(">", "&gt;");
+      } 
+
+      var msg = getParameterByName("msg");
+      if (msg != null) {
+        document.getElementById("msg").innerHTML = msg;
+      }
+    </script>
+  </body>
+</html>
