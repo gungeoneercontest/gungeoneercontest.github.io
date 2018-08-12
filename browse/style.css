@@ -195,6 +195,10 @@ header .nav {
   bottom: 3px;
 }
 
+header .navbutton.nav {
+  bottom: 0;
+}
+
 .inactive {
   color: rgba(255, 255, 255, 0.3);
 }
