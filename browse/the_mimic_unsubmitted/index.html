@@ -41,14 +41,14 @@
       </p>
       <p>
         This entry has received
-        <strong><span id=f_amount>[javascript is disabled]</span></strong>
+        <strong><span id=f_amount>[error]</span></strong>
         <em>F</em>s.
       </p>
     </div>
 
     <script type=text/javascript>
       var request = new XMLHttpRequest(); 
-      request.open("GET", 'http://etg.zatherz.eu/app/get_f');
+      request.open("GET", 'https://zatherz.eu/etgcontestresults/f.html');
       request.onreadystatechange = function() { 
         if (request.readyState === 4 && request.status === 200) {
           console.log(request.response);
