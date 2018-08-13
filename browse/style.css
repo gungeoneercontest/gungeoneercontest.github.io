@@ -352,3 +352,13 @@ img.whitebg {
   background-color: rgba(127, 127,  255, 0.2);
   animation: pop 0.5s linear none;
 }
+
+.imgname {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+p a {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.15);
+}
