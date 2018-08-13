@@ -56,6 +56,12 @@
         }
       };
       request.send(null);
+
+      document.addEventListener("keypress", function(event) {
+        if (event.keyCode == 69) {
+          window.location.replace("http://etg.zatherz.eu/app/submit_f");
+        }
+      })
     </script>
 
     <a href=gfx/showcase.png> <img class=showcase src=gfx/showcase.png> </a>
