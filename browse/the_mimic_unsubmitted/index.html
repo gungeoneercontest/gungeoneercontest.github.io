@@ -58,7 +58,8 @@
       request.send(null);
 
       document.addEventListener("keypress", function(event) {
-        if (event.which == 70) {
+        console.log(event.key);
+        if (event.key == "f") {
           window.location.replace("http://etg.zatherz.eu/app/submit_f");
         }
       })
