@@ -1,0 +1,212 @@
+<html>
+  <head>
+    <title> The Mimic </title>
+    <link rel=stylesheet type=text/css href="/fonts.css">
+    <link rel=stylesheet type=text/css href="/browse/style.css">
+
+    <meta property="og:title" content="The Mimic" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="http://etg.zatherz.eu:1000/browse/the_mimic_unsubmitted/gfx/showcase.png" />
+    <meta property="og:description" content="Press F to pay respects." />
+    <meta name=viewport content="width=device-width">
+  </head>
+
+  <body>
+    <header>
+      <span class="inactive nav"> &lt; </span>
+      <span class=separator> </span>
+      <a href=".."> INDEX </a> 
+      <span class=separator> </span>
+      <a href="http://etg.zatherz.eu/app/submit_f"> F </a> 
+      <span class=separator> </span>
+      <span class="inactive nav"> &gt; </span>
+    </header>
+
+    <div class=content>
+      <h1 id=name> The Mimic </h1>
+      <h4 id=author> by <strong>Gadd</strong>#9838 </h5>
+    </div>
+
+    <div class="content important">
+      <h3> UNSUBMITTED ENTRY </h3>
+      <p>
+        This entry is finished, but the author of it
+        did not send it through the proper Google Form.
+        As a result, it was not included in the contest
+        and you can not vote for it.
+        As a courtesy to how well made it is, I have made
+        a showcase for it. While you can't vote on it, you can
+        <a href="https://i.kym-cdn.com/entries/icons/original/000/017/039/pressf.jpg">give it an F</a>
+        to show your appreciation. You can give an unlimited amount of Fs.
+      </p>
+      <p>
+        This entry has received
+        <strong><span id=f_amount>[error]</span></strong>
+        <em>F</em>s. (it may take a while for this to update)
+      </p>
+    </div>
+
+    <script type=text/javascript>
+      var request = new XMLHttpRequest(); 
+      request.open("GET", 'https://zatherz.eu/etgcontestresults/f.html');
+      request.onreadystatechange = function() { 
+        if (request.readyState === 4 && request.status === 200) {
+          console.log(request.response);
+          document.getElementById("f_amount").innerText = request.response;
+        }
+      };
+      request.send(null);
+
+      document.addEventListener("keypress", function(event) {
+        console.log(event.key);
+        if (event.key == "f") {
+          window.location.replace("http://etg.zatherz.eu/app/submit_f");
+        }
+      })
+    </script>
+
+    <a href=gfx/showcase.png> <img class=showcase src=gfx/showcase.png> </a>
+    <a href=gfx/showcase2.png> <img class=showcase src=gfx/showcase2.png> </a>
+
+
+    <div class=content>
+      <p class=multiline> Standard art of The Mimic. 
+        The mimic form is an IDLE animation idea and only serves a cute aesthetic purpose.
+        The top of the crown only pops out in the mimic form, this was designed to save space in the basic sprite.
+      </p>
+      
+      <h3> Items </h3>
+      <div class=kit>
+        <div class=item>
+          <h5 class=type> WEAPON </h5>
+          <h3 class=name> Jackpot of Greed </h3>
+          <a href=gfx/jackpot_of_greed.png> <img src=gfx/jackpot_of_greed.png> </a>
+          <p>
+            The Mimic Queen gun is just an standard weapon, it shoots a bit more powerfully but it's a bit more slow and imprecise than the other gungeoneers basic weapons.
+            And it's a yu gi oh reference because why not (Greediness FTW).
+          </p>
+          <ul>
+            <li> Type: Semiautomatic </li>
+            <li> Quality: - </li>
+            <li> Magazine Size: 5 </li>
+            <li> Max Ammo: Infinite </li>
+            <li> Reload Time: 1.5s </li>
+            <li> Damage: 8 </li>
+            <li> Fire Rate: 0.25 </li>
+            <li> Shot Speed: 30 </li>
+            <li> Range: 12 </li>
+            <li> Force: 15 </li>
+            <li> Spread: 10 </li>
+          </ul>
+        </div>
+        <div class=item>
+          <h5 class=type> PASSIVE </h5>
+          <h3 class=name> Mimic Crown </h3>
+          <a href=gfx/mimic_crown.png> <img src=gfx/mimic_crown.png> </a>
+          <p>
+            Quality: B
+          </p>
+          <p>
+            Mimic’s no longer attack you or damage you when you find or touch them. Awakened mimic’s will follow you and help you as allies in combat.
+            Mimic’s recluted this way shoot a 70% less often and have 50% less health.
+            If you hit a mimic they dont get damage, but make typical gross mimics sounds in admiration for the queen ❤ .
+          </p>
+        </div>
+        <div class="item hanging">
+          <h5 class=type> ACTIVE </h5>
+          <h3 class=name> Golden Heart Lock </h3>
+          <a href=gfx/golden_heart_lock.png> <img src=gfx/golden_heart_lock.png> </a>
+          <p>
+            Quality: A
+          </p>
+          <p>
+            Grants a heart container.
+          </p>
+          <p>
+            When you actívate this ítem, consume the active weapon (Standard weapons can’t be consumed) and produce one of the followings effects:
+          </p>
+          <ul>
+            <li> Your character spits money equivalent to the full Price of the weapon. </li>
+            <li> Your character spits a weapon of the same quality with a random amount of ammunition. </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3> Gameplay </h3>
+      <a href=gfx/concept1.png> <img src=gfx/concept1.png> </a>
+      <p>
+        I designed this character gameplay to match his greedy and risky personality, making play with it a fun way to turn the tables or screw your arsenal. His starter gun shoots in a kind of slow and imprecise way, but powerful in close range, this accompanied with his free key and shields make the first floor fast and easily enjoyable, with more chances to get a lot of stuff.
+      </p>
+      <a href=gfx/concept2.png> <img src=gfx/concept2.png> </a>
+      <p>
+        His items give them the possibility of turn something negative, like a mimic or a weak weapon, into something useful. The possibility of roll a weapon it´s super fun and risky, and its balanced by the weapon quality, who actually don't define the real utility of a gun. 
+      </p>
+      <p>
+        In the other hand, the capacity of reclute mimics into allies it’s a fun way to give life to floors, the mimics aren´t really common or powerful against enemys and the fact they can drop the item in pits by falling in the combat is an interesting extra drawback for this skill.
+      </p>
+
+      <h3> Backstory </h3>
+      <h5 class=imgname> Concept Art for the basic skin, "The Mimic Queen". </h5>
+      <a href=gfx/mimic_queen.png> <img src=gfx/mimic_queen.png> </a>
+      <p>
+        Mimics are mysterious creatures, nobody knows where they come from or how it looks their origin planet, but if something is known about these vicious monsters is his greedy and cheater behavior, who leads them to dwell dungeons and caves, and for the most violent and crazy ones, the gungeon is the perfect place to live. But among all the mimic there is one that stands out from the rest for its great ambition, the queen of the mimic; the most ambitious and vain of his race.
+      </p>
+      <p>
+        As a rite of passage, mimics devour a very valuable treasure and guard it in their guts until the sacred moment when it’s time to shoot to death some obtuse and over confident adventurer. However, the mimic queen is not your average mimic, and for her selfish and arrogant majesty there’ s not more appropriate relic than the most valuable weapon, the most wanted weapon of all; the gun that can kill the past.
+      </p>
+
+      <h5 class=imgname> Concept Art for the alternative skin, "The Present Past Killer". </h5>
+      <a href=gfx/present_past_killer.png> <img src=gfx/present_past_killer.png> </a>
+      <p>
+        But this time, the queen is not the only gungeoneer who is going to enter the depths of the gungeon in the search of this unique treasure. Some steps behind her, hides Sir Bestone, a legendary hero recognized and admired al across the universe for his incredible feats, a mythical hero whit a big secret; all his achievements are lies or misunderstandings.
+      </p>
+      <p>
+        Sir Bestone lived his entire hero career as an imposter who stole others feats, but is determined to kill his past and start a new life of training to become a real hero (or maybe a baker) and he is going to steal all the credit crossing the path of destruction that you opened and taking the weapons from every corner of the gungeon you left in ruins... so it’s time you teach him a real lesson of courage becoming the real final boss of this adventure by fighting the “legendary” hero by yourself.
+      </p>
+      <p>
+        Once you defeat Bestone in combat and shoot right to his past, finally the mimic queen is free to eat the gun that can kill the past and rest in peace. Sadly, in a matter of seconds after the queen eats the legendary relic, the gun shots inside his stomach sends the mimic queen to the past exactly five minutes before she descends into the first floor of the gungeon, in a very funny and dumb scene.
+      </p>
+      <p>
+        After this incident, the queen continues with his eternal search of the gun and Bestone is in this timeline a real hero, a hero with his own bakery.
+      </p>
+
+      <h3> Final Boss Battle and The Kill of The Past </h3>
+      <h5 class=imgname> Concept art of Sir Bestone and the "Boss" Battle </h5>
+      <a href=gfx/past.png> <img src=gfx/past.png> </a>
+      <p>
+        What is unique about this battle is it is not in exactly in the past and you are not exactly the adventurer. This time it’s your job to encarnate the boss of the gungeon and protect the gun of a real impostor, one more fake and vain than the Mimic Queen itself!
+      </p>
+      <p>
+        Sadly, before the battle you loss all of your weapons at the enter of the hallway who leads to the gun that can kill the past, so your only weapon for now is your standar Jackpot Of Greed. (You loss every item, including passives and actives).
+      </p>
+      <p>
+        In the other hand, Bestone is a master of the cheat, he brings with him a bunch of Gungeon weapons he take from the ruins of your path of destruction, turning him into a great threat. But your biggest weapon is your battle experiencie, your knowledge of the Gungeon weapons and, of course, your mastery in the dodge roll. With this tools you can bring down a fake master of combat like Bestone.
+      </p>
+      <p>
+        In the battle…
+      </p>
+      <ul>
+        <li> The Battle takes place in the "Gun that can kill the past Room" </li>
+        <li> Bestone fights with some of the most iconic Gungeon weapons. </li>
+        <li> He sucks aiming and changing weapons, but he has a lot of ammo and resources. </li>
+        <li> Of course, he is a top tier coward, so is very hard to actually hit him because is natural evasión. </li>
+        <li> Every certain amount of damage dealt to Bestone make him drops a random weapon of his own pool of “classic ones” (Megahand, Casey, ETC). This make the combat different every time!. </li>
+      </ul>
+
+      <h4> Bonus </h4>
+      <a href=gfx/cultist_past.png> <img src=gfx/cultist_past.png> </a>
+      <p>
+        When the cultist comes with you, he insist in use the boss encounter portrait he drew by its own. His friends told him it was a rad design, I agree.
+      </p>
+     </div>
+    </div>
+  
+    <footer>
+      <p>
+        This is not an auto-generated page. All of the content belongs to the submitter.
+        No intentional changes have been introduced by the person creating this showcase.
+        Any difference between the actual submission and this page is a bug.
+      </p>
+    </footer>
+  </body>
+</html>
